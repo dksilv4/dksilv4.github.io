@@ -55,9 +55,15 @@
 //COLOR OF THE SIDE BAR
 .bg-gray-dark{
   background-color:#000000 !important;
-  background-image: url("../images/bg.png");
-  background-repeat: no-repeat;
-  background-position: left;
+  background-image: url("../images/bgsmall.jpg");
+  background-size: cover;
+}
+@media (min-width: 768px){
+  .bg-gray-dark{
+    background: url("../images/bg.png");
+    background-size: cover;
+
+  }
 }
 //COLOR OF MAIN
 .bg-gray-light{
