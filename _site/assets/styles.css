@@ -200,7 +200,7 @@
 
 .min-height-full { min-height: 100vh; }
 
-.bg-gray-dark { background-color: #000000 !important; }
+.bg-gray-dark { background-color: #000000 !important; background-image: url("../images/bg.png"); background-repeat: no-repeat; background-position: left; }
 
 .bg-gray-light { background-color: #0e0e0e !important; }
 
