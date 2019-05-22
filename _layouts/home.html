@@ -43,7 +43,9 @@
         {% if site.topics %}
           {% include interests.html %}
         {% endif %}
-
+        <div id='videos' style="display: block">
+          {% include videos.html %}
+        </div>
         {% unless posts_total == 0 %}
           {% include thoughts.html %}
         {% endunless %}
