@@ -17,6 +17,7 @@
     position: relative;
     top: 2px;
     width: 12px;
+    color:#ffffff;
 }
 
 .emoji {
@@ -57,6 +58,7 @@
   background-color:#000000 !important;
   background-image: url("../images/bgsmall.jpg");
   background-size: cover;
+  background-position: center;
 }
 @media (min-width: 768px){
   .bg-gray-dark{
@@ -72,4 +74,16 @@
 //COLOR OF CARDS
 .bg-black{
   background-color: #000000 !important
+}
+.text-black{
+  color: #000000;
+}
+.text-white{
+  color: #ffffff;
+}
+.card-height{
+  height: 80%;
+}
+.link-gray{
+  color:#252424 !important
 }
