@@ -217,4 +217,4 @@
 
 .flex-self-stretch { -ms-grid-row-align: center !important; align-self: stretch !important; }
 
-.centerHead { padding-top: 100%; }
+@media (min-width: 768px) { .centerHead { padding-top: 100%; } }
