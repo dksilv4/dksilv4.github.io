@@ -200,11 +200,13 @@
 
 .min-height-full { min-height: 100vh; }
 
-.bg-gray-dark { background-color: #000000 !important; background-image: url("../images/bgsmall.jpg"); background-size: cover; background-position: center; }
+.bg-gray-dark { background-color: #000000 !important; background-image: url("../images/bgsmall.jpg"); background-size: cover; }
 
-.bg-gray-light { background-color: #000000 !important; }
+.bg-gray-light { background-color: #0e0e0e !important; }
 
-.bg-black { background-color: #0e0e0e !important; }
+@media (min-width: 900px) { .bg-gray-dark { position: fixed; top: 0; left: 0; width: 400px; height: 100%; z-index: 1; }
+  .bg-gray-light { position: relative; z-index: 0; left: 200px; } }
+.bg-black { background-color: #000000 !important; }
 
 .text-black { color: #000000; }
 
@@ -212,21 +214,22 @@
 
 .card-height { height: 80%; }
 
-.link-gray { color: #b1afac !important; }
+.link-gray { color: #252424 !important; }
 
 @media (min-width: 768px) { .bg-gray-dark { background: url("../images/bg.png"); background-size: cover; }
-  .centerHead { padding-top: 90%; -webkit-transition: linear .2s; /* Safari */ transition: linear .2s; } }
+  .centerHead { padding-top: 100%; -webkit-transition: linear .2s; /* Safari */ transition: linear .2s; } }
 @media (min-width: 768px) and (max-height: 400px) { .centerHead { padding-top: 5%; -webkit-transition: linear .1s; /* Safari */ transition: linear .1s; } }
-iframe { display: flex; width: 100%; height: 600px; margin-top: 20px; margin-bottom: 30px; background-color: #0e0e0e; }
+iframe { display: block; width: 100%; height: 600px; margin-top: 20px; margin-bottom: 30px; }
+@media (max-width: 768px) { iframe { height: 300px; transition: linear .1s; } }
 
 /* Hide the images by default */
-.mySlides { display: hidden; }
+.mySlides { display: hiden; }
 
 /* Next & previous buttons */
 .prev, .next { cursor: pointer; padding: 100px; color: white; text-align: justify; font-weight: bold; font-size: 18px; transition: 0.6s ease; border-radius: 3px 3px 3px 3px; }
 
 /* On hover, add a black background color with a little bit see-through */
-.prev:hover, .next:hover { background-color: rgba(100, 100, 100, 0.1); background-position: center; background-attachment: local; padding: 25px; transition: .5s ease; }
+.prev:hover, .next:hover { background-color: rgba(100, 100, 100, 0.1); background-position: center; background-attachment: local; padding: 40px; transition: .5s ease; }
 
 /* Fading animation */
 .fade { -webkit-animation-name: fade; -webkit-animation-duration: 1.5s; animation-name: fade; animation-duration: 1.5s; }
